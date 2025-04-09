@@ -1,0 +1,75 @@
+Mark și John încearcă să își compare IMC-ul (Indicele de Masă Corporală), care se calculează folosind formula: IMC = greutate / (înălțime * înălțime) (greutatea în kg și înălțimea în metri).
+
+Sarcina voastră este să scrieți niște cod pentru a-i ajuta:
+
+1. Stochează greutatea și înălțimea lui Mark și John în variabile numite greutateMark, înălțimeMark, greutateJohn și înălțimeJohn.
+
+2. Calculează ambele lor IMC-uri folosind formula și stochează rezultatele în două variabile numite BMIMark și BMIJohn.
+
+3. Afișează valoarea lui BMIMark și BMIJohn în consolă.
+
+4. Creează o variabilă booleană markHigherBMI care să conțină informații despre dacă Mark are un IMC mai mare decât John. Afișează-o și pe aceasta în consolă.
+
+DATE DE TESTARE 1: Mark cântărește 78 kg și are 1.69 m înălțime. John cântărește 92 kg și are 1.95 m înălțime.
+DATE DE TESTARE 2: Mark cântărește 95 kg și are 1.88 m înălțime. John cântărește 85 kg și are 1.76 m înălțime.
+
+5. Afișează un rezultat frumos în consolă, spunând utilizatorului cine are IMC-ul mai mare. Mesajul poate fi fie:"IMC-ul lui Mark este mai mare decât al lui John!" sau "IMC-ul lui John este mai mare decât al lui Mark!".
+
+6. Modifică mesajele de mai sus pentru a folosi template literals pentru a include valorile IMC-urilor în rezultate.Exemplu: "IMC-ul lui Mark (28.3) este mai mare decât al lui John (23.9)!" sau "IMC-ul lui John (29.1) este mai mare decât al lui Mark (27)!".
+
+
+Sunt două echipe de gimnastică: Delfinii și Koala. Ele concurează una împotriva celeilalte de 3 ori. Câștigătoarea cu cel mai mare scor mediu câștigă un trofeu!
+
+Sarcinile voastre:
+
+1. Calculează scorul mediu pentru fiecare echipă, folosind datele de testare incluse mai jos. 
+
+2. Scorul mediu pentru Delfini ar trebui atribuit variabilei scoreDolphins, iar scorul mediu al Koalelor ar trebui atribuit variabilei scoreKoalas.
+
+3.Compară scorurile medii ale echipelor pentru a determina câștigătoarea competiției și afișează în consolă:
+
+"Delfinii câștigă trofeul" dacă Delfinii câștigă, sau"Koala câștigă trofeul" dacă Koala câștigă, sau
+"Ambele câștigă trofeul" dacă scorurile lor medii sunt egale.
+
+DATE DE TESTARE: Delfinii au marcat 96, 108 și 89. Koala au marcat 88, 91 și 110.
+
+
+Steven are nevoie de un calculator de bacșiș foarte simplu pentru când merge să mănânce la restaurant. În țara lui, este obișnuit să se ofere un bacșiș de 15% dacă valoarea notei de plată este între 50 și 300. Dacă valoarea este diferită, bacșișul este de 20%.
+
+Sarcinile voastre:
+1. Calculează bacșișul, în funcție de valoarea notei de plată. 
+
+2. Creează o variabilă numită tip pentru aceasta. Nu este permis să folosești o instrucțiune if...else (dacă îți este mai ușor, poți începe cu o instrucțiune if...else și apoi să încerci să o convertești într-un operator ternar).
+
+3. Afișează un șir de caractere în consolă care să conțină valoarea notei de plată (bill), bacșișul (tip) și valoarea finală (bill + tip).
+
+Exemplu: Nota de plată a fost 275, bacșișul a fost 41.25, iar valoarea totală 316.25.
+
+DATE DE TESTARE: Testează cu diferite valori ale notei de plată (bill): 275, 40 și 430
+
+INDICIUL 1: Pentru a calcula 20% dintr-o valoare, pur și simplu înmulțește-o cu 20/100 = 0.2
+
+INDICIUL 2: Valoarea X este între 50 și 300, dacă este >= 50 && <= 300
+
+
+Înapoi la cele două echipe de gimnastică, Delfinii și Koala! Există o nouă disciplină de gimnastică, care funcționează diferit.
+Fiecare echipă concurează de 3 ori, iar apoi se calculează media celor 3 scoruri (deci un singur scor mediu per echipă).
+O echipă câștigă doar dacă are cel puțin dublul scorului mediu al celeilalte echipe. Altfel, nicio echipă nu câștigă!
+
+Sarcinile voastre:
+
+1. Creează o funcție săgeată (arrow function) calcAverage pentru a calcula media a 3 scoruri. Această funcție ar trebui să aibă trei parametri și să returneze un singur număr (scorul mediu).
+
+2. Creează două variabile noi — scoreDolphins și scoreKoalas, și atribuie-le valoarea returnată de funcția calcAverage (va trebui să apelezi această funcție și să treci scorurile ca argumente).
+
+3. Creează o funcție checkWinner care primește
+scorul mediu al fiecărei echipe ca parametri (avgDolphins și avgKoalas) și apoi afișează câștigătorul în consolă, împreună cu punctele de victorie, conform regulii de mai sus. 
+
+Exemplu: Koala câștigă (30 vs. 13) (folosește avgDolphins și avgKoalas în loc de valori codificate direct).
+
+Folosește funcția checkWinner pentru a determina câștigătorul pentru ambele DATA 1 și DATA 2.
+
+Dacă nu există niciun câștigător (este egalitate), afișează în consolă: Nicio echipă nu câștigă...
+
+DATE DE TESTARE 1: Delfinii au marcat 44, 23 și 71. Koala au marcat 65, 54 și 49.
+DATE DE TESTARE 2: Delfinii au marcat 85, 54 și 41. Koala au marcat 23, 34 și 27.
